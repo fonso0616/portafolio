@@ -166,3 +166,108 @@ footer {
         display: none;
     }
 }
+/* --- Experiencia --- */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.experience-card {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.experience-card:hover {
+    background: #334155;
+    transform: translateY(-5px);
+}
+
+.experience-card h3 {
+    color: #38bdf8;
+    margin-bottom: 0.3rem;
+}
+
+.experience-card .company {
+    font-weight: bold;
+    color: #94a3b8;
+    display: block;
+}
+
+.experience-card .date {
+    font-size: 0.9rem;
+    color: #64748b;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.experience-card p {
+    color: #e2e8f0;
+    font-size: 0.95rem;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5%;
+    background: url("images/background_image.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6); /* Oscurece para mejorar contraste */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+#contacto {
+  padding: 50px;
+  background: #0d0d0d;
+  color: white;
+  text-align: center;
+}
+
+#contacto form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contacto input,
+#contacto textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+#contacto button {
+  background: #ff4c60;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#contacto button:hover {
+  background: #e63950;
+}
+
